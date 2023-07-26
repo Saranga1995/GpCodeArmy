@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visit Sri Lanka- Kandy</title>
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	
+</head>
+<style>
+
+   @import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic,900);
+* {
+  box-sizing: border-box;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:  #34277f;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+	
+	.card {
+box-shadow: 0 4px 8px 0 
+rgba(0,0,0,0.2);
+width: 30%;
+border-radius: 10px;
+float: left;
+margin: 5px;
+padding:20px;
+justify-content:center;
+align-content:center;
+}
+
+
+img {
+border-radius: 5px 5px 0 0;
+
+}
+.container {
+padding: 2px 16px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    /* --color1:#e50914; */
+    --color1:#f24b4b;
+    --color2:#000000;
+    --color3:#a7a7a7;
+    --lightColor2:#181818;
+    --shadowcolor1: #afc0d9;
+    --boxShadow:0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    --bgcolor1:#efe9e9;
+    --headerBG:#322e2e2e;
+
+}
+
+*{
+    font-family: 'Nunito',sans-serif;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* outline: none; */
+    transition: all .3s linear;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;;
+    
+        scroll-behavior: smooth;
+}
+.section-title{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      var(--color2) 0%,
+      #44107a 29%,
+      var(--color1) 67%,
+      #fff800 100%
+    );
+    /* background-size: auto auto;
+    background-clip: border-box; */
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+        font-size: 70px;
+    text-align: center;
+
+}
+@keyframes textclip {
+    from {
+        transform: translateX(0%);
+      }
+    
+    to {
+      background-position: 200% center;
+    }
+  }
+
+  /* starting code of breadcrum */
+  #breadcrumb ul {
+   
+    list-style-type: none;
+    color: #ccc;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px 10px;
+    
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  #breadcrumb li {
+    display: inline-block;
+    /* truncate breadcrumbs */
+    max-width: 18%;
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  #breadcrumb li:last-child {
+    /* main title can have a bigger truncating treshhold */
+    max-width: 30%;
+  }
+  
+  #breadcrumb li:before {
+    content:"> ";
+    color: #999;
+  }
+  
+  #breadcrumb li:first-child:before {
+    content: none;
+  }
+  
+  #breadcrumb li a {
+    text-decoration: none;
+    color: var(--color1)
+  }
+  
+  #breadcrumb li a span:hover {text-decoration: underline}
+  
+  /* end code of breadcrum */
+
+
+
+/* style start for header  */
+.header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+   
+    
+ 
+}
+footer .logo,
+.header .logo {
+  text-decoration: none;
+  color:#fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+footer .logo img,
+.header .logo img{
+    width:50px;
+}
+footer .logo img:hover,
+.header .logo img:hover{
+    transform: rotate(360deg);
+    transition: all .5s linear;
+}
+.header .outer-nav .navbar i,
+.header .outer-nav .navbar a{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding:0.5rem 1.5rem;
+    color: #fff;
+
+}
+.header .outer-nav .navbar a.active,
+.header  .outer-nav .navbar a:hover{
+    
+    background-color: var(--color1);
+    color:#fff;
+}
+.header  .outer-nav .responsive-bar #res-bar {
+    font-size: 3.7rem;
+    border-radius: 0.5rem;
+    padding:0.5rem 1.5rem;
+    color:#fff;
+}
+.header  .outer-nav .responsive-bar #res-bar:hover{
+    background-color: var(--color1);
+}
+.header  .outer-nav .responsive-bar #res-bar{
+    display: none;
+}
+
+/* style end for header  */
+
+/* start of video section  */
+
+.video-hero{
+    width:100%;
+    height: 100vh;
+     overflow: hidden; 
+    background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding:0 5%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.hero-video {
+    position: absolute;
+    width: 100%;
+  
+    right: 0;
+    bottom: 0;
+    top:0;
+     display: block;
+    z-index: -1;
+}
+.video-content{
+    text-align: center;
+    margin-top:50px;
+}
+.video-content h1{
+    font-size: 130px;
+    color:#fff;
+    font-weight: 600;
+
+}
+
+.video-content a{
+    text-decoration: none;
+    display: inline-block;
+    color:#fff;
+    font-size: 24px;
+    font-weight: 600;
+    border:2px solid #fff;
+    padding:14px 70px;
+    border-radius: 50px;
+    margin-top:20px;
+}
+.video-content a:hover{
+    color:var(--color1);
+    border:2px solid var(--color1);
+    font-weight: 600;
+    padding:24px 90px;
+}
+
+
+/* end of video section  */
+
+
+/* style start of button section  */
+.button{
+    font-size: 1.7rem;
+    border-radius: 0.5rem;
+    padding:0.5rem 1.5rem;
+    color:#fff;
+    background-color: var(--color1);
+}
+.button:hover{
+    padding:.9rem 2.5rem;
+    font-size: 2rem;
+}
+
+/* style end of button section  */
+
+/*start style of home about  */
+.home-about{
+    margin:80px 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+     padding:0px 8%; 
+    flex-flow: row nowrap;
+    /* box-shadow: var(--boxShadow); */
+}
+.home-about .about-img,.home-about .about-content{
+    flex:  0 50%;
+}
+
+.home-about .about-img img{
+    max-width:500px;
+    height: 350px;
+    object-fit: fill;
+    border-radius: 20px;
+}
+.subtitle{
+    color: var(--color1);
+    font-size: 15px;
+    font-weight: 500;
+}
+.title{
+    color: black;
+    font-size: 22px;
+    font-weight: 700;
+}
+.about-content p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/*end style of home about  */
+
+
+
+
+
+/*============start of places---------------*/
+.places-section{
+    text-align: center;
+    padding: 5% 0;
+    background-color:#999;
+}
+.famouse-places{
+    
+    max-width: 1200px;
+ margin: 0 auto;
+}
+.place-container {
+    display: grid;
+    margin-top: 3rem;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    
+  }
+  .place-container a {
+    text-decoration: none;
+  }
+  .place-item {
+    position: relative;
+    /* padding: 3rem 2rem; */
+    border-radius: 6px;
+    background-color: #e668a7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height:250px; 
+    object-fit:fill;
+    box-shadow: 0px 0px 20px 0px rgba(95, 140, 191, 0.9);
+  }
+  
+  .place-item img{
+    width:100%;
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+  
+  
+ 
+  
+  .place-item-hover {
+    background-color: #000000cc;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 6px;
+   
+  }
+  .place-item-hover h2{
+    font-size: 30px;
+    font-weight: 800;
+  }
+  .place-item-hover:hover{
+    opacity: 1;
+  }
+
+  
+
+  
+/*============end of places---------------*/
+
+/*--------------------- starting of season section  */
+.season-section{
+    background: var(--bgcolor1) ;
+    padding-bottom:50px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.29);
+    text-align: center;
+    padding:5% 0;
+}
+
+.season-containter{
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	flex-direction: row;
+    padding:2%;
+    margin: 1rem auto;
+}
+.season-item{
+  height: 180px;
+  width: 47%;
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  background-color: #fff;
+  margin-left:10px;
+}
+
+.season-item div:first-child {
+    flex-basis: 35%;
+  }
+
+.season-item  img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+ .season-content{
+    text-align: left;
+    flex-basis: 65%; 
+    padding: 0 1.5rem 0.25rem;
+ } 
+ .season-content h2{
+    font-size: 20px;
+    font-weight: 700;
+ }
+ .season-content span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #727272;
+ }
+ .season-content p{
+    font-size: 14px;
+    font-weight: 600;
+    padding:8px 0;
+}
+/* -------------------- ending of season section  */
+
+/* ------------singlepate section start ------------ */
+
+.main-hero-content{    
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 800;}
+.single-page{
+    max-width: 80%; 
+    padding:5rem 1.5rem;
+    display:block;
+     margin:auto;
+}
+.single-page p{
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 0;
+}
+.single-page h2{
+    font-size: 20px;
+    padding: 9px 0px;
+}
+/* .single-page > * { margin: .75rem 0; } */
+.single-page img{
+    width:100%;
+    height: 70vh;
+    object-fit: cover;
+}
+/* ------------single page  end ------------ */
+
+
+/* start of video gallery */
+/* taking care of responsive layout */
+.video-section{
+    max-width: 80%; 
+    padding:5rem 1.5rem;
+    display:block;
+     margin:auto;
+}
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5rem;
+  }
+  
+  .single-video {
+    width: 25rem;
+    flex-grow: 1;
+    margin: 0.5rem;
+  }
+  
+  /* taking care of the video aspect-ratio */
+  .video-section figure {
+    position: relative;
+    padding: 0 0 56.25% 0;
+  }
+  
+  .video-section figure iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+    
+footer{
+  position: relative;
+  background: #140B5C;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.content .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+.content .top .media-icons{
+  display: flex;
+}
+.content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+}
+footer .content .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .content .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.content .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+.link-boxes .box .link_name::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 2px;
+  width: 35px;
+  background: #fff;
+}
+.content .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.content .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.content .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.content .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="button"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="button"]:hover{
+  opacity: 1;
+}footer .bottom-details{
+  width: 100%;
+  background: #0F0844;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .content .top .logo-details{
+    font-size: 26px;
+  }
+  .content .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 60%;
+  }
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}
+</style>
+<body>
+  
+
+   
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="packages.html">Packages</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="registration.html" class="ctn">Register here</a>
+</div>
+
+
+  <!-------------------- start of hero section  -->
+  <!-- start of hero section  -->
+    <section class="main-hero">
+       <div class="main-hero-content">
+        <h1>Kandy</h1>
+       </div>
+    </section>
+  <!-- end of hero section  -->
+
+  
+    <section class="video-hero">
+	<video autoplay loop muted plays-inline class="hero-video">
+	   <source src="Kandyvidio.mp4" type="video/mp4"/>
+	</video>
+   <div class="video-content">
+	 <span> <h1>KANDY</h1></span>
+	  
+   </div>
+  </section>
+
+
+ <section class="single-page">
+	<h2>Kandy</h2>
+    <p>Kandy is a major city in Sri Lanka located in the Central Province. It was the last capital of the ancient kings' era of Sri Lanka.</p>
+	<br>
+	<p> The city is situated in the midst of hills in the Kandy plateau, which crosses an area of tropical plantations, mainly tea. Kandy is both an administrative and religious city and is also the capital of the Central Province. Kandy is the home of the Temple of the Tooth Relic (Sri Dalada Maligawa), one of the most sacred places of worship in the Buddhist world. It was declared a World Heritage Site by UNESCO in 1988. Historically the local Buddhist rulers resisted Portuguese, Dutch, and British colonial expansion and occupation.</p>
+	<br>
+	<p> Kandy located in the centre of the island and in a high elevation, the city has a relatively wetter and cooler temperatures than that of the tropical climate of the rest of the country, especially the coastal regions. Nuwara Eliya is south to it and has a cooler climate due to its higher elevation. Nevertheless, Kandy's climate is still tropical as mean temperatures year round are above 18 °C on average.</p>
+  <br>
+  <p>The city does experience a drier period from January to April.From May through to July and October to December the region experiences its monsoon season, during this time the weather is rough and unstable. From March through the middle of May is the intermonsoonal period, during this time there is light rain and strong humidity. The humidity is generally between 70% and 79%</p>
+   
+   <div class="card">
+<img src="Kandy1.jpg" 
+alt="Avatar" style="width:100%">
+<div class="container"> 
+</div>
+</div>
+
+<div class="card">
+<img src="Kandy2.jpg" 
+alt="Avatar" style="width:100%">
+<div class="container">
+
+</div>
+</div>
+
+<div class="card">
+<img src="Kandy3.jpg" 
+alt="Avatar" style="width:100%">
+<div class="container">
+ 
+</div>
+</div>
+
+    
+	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63320.430107952205!2d80.58458140156198!3d7.294543434413955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae366266498acd3%3A0x411a3818a1e03c35!2sKandy%2C%20Sri%20Lanka!5e0!3m2!1sen!2sjp!4v1689357854293!5m2!1sen!2sjp" width="93%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+ </section>
+
+  
+  <!-- starting of footer -->
+    <footer>
+    <div class="content">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">CodeArmy</span>
+        </div>
+        <div class="media-icons">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+          <li class="link_name">Company</li>
+          <li><a href="resposive-website_full.html">Home</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Get started</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <li><a href="https://www.immigration.gov.lk/">Visa</a></li>
+          <li><a href="https://www.srilankan.com/ja_jp/jp">Air Ticketing</a></li>
+          <li><a href="https://www.srilankantourguide.com/	">Tour Guide</a></li>
+          <li><a href="https://www.booking.com/country/lk.en-gb.html">Accomadation</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Account</li>
+          <li><a href="https://www.facebook.com/">Facebook</a></li>
+          <li><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><a href="mailto: ">Mail</a></li>
+          <li><a href="tel: +81773837973">Hotline</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Read More</li>
+          <li><a href="https://www.sltda.gov.lk/en">Tourism</a></li>
+          <li><a href="https://www.mwfc.gov.lk/department-of-wildlife-conservation/">Wild Life</a></li>
+          <li><a href="https://www.istockphoto.com/jp/search/2/image?phrase=sri+lanka">Photography</a></li>
+          <li><a href="https://www.sltb.lk/">Transport</a></li>
+        </ul>
+        <ul class="box input-box">
+          <li class="link_name">Subscribe</li>
+          <li><input type="text" placeholder="Enter your email"></li>
+          <li><input type="button" value="Subscribe"></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2023 <a href="#">CodArmy</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="#">Privacy policy</a>
+          <a href="#">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+
+  
+
+</body>
+</html>
